@@ -1,0 +1,80 @@
+body {
+    background-image: url('1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Styling for sections */
+#intro-section, #portfolio-section {
+    padding: 50px;
+    margin: 80px auto 20px; /* Adjust margin to account for navbar */
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+#portfolio-section {
+    margin-top: 50px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.portfolio-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Button styling */
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Janloy Regero Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#intro-section">Home</a>
+        <a href="#portfolio-section">Portfolio</a>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro-section">
+        <header>
+            <h2>My Portfolio</h2>
+        </header>
+
+        <div class="container" style="display: flex; justify-content: center; align-items: center;">
+            <div class="left-panel" style="margin-right: 20px;">
+                <img src="2.jpg" alt="Janloy Regero" style="width: 200px; height: auto;">
+            </div>
+            <div class="right-panel">
+                <h1>Hi! I'm Janloy Regero</h1>
+                <p>Welcome to my portfolio. I am Janloy Regero, currently studying Bachelor of Science in Information Technology at Davao del Norte State College. This portfolio showcases a selection of my work.</p>
+                <a href="#portfolio-section" class="button">View Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section">
+        <h1 style="text-align: center;">Portfolio</h1>
+        <h2 style="text-align: center; margin: 10px;">My Works</h2>
+        
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <a href="https://drive.google.com/drive/folders/11VFPoDOHNXmy7z8UzW5SIxbk7fnTo1NA" target="_blank">
+                    <img src="3.jpg" alt="Attendance Tracker">
+                    <br><br>
+                    <span>Attendance Tracker</span>
+                </a>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://drive.google.com/drive/folders/1TJunPb1vmXe78s_IChgwnRzh_ROV6x1e" target="_blank">
+                    <img src="4.jpg" alt="Midterm Project" style="width: 230px;">
+                    <br><br>
+                    <span>Midterm Project</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Janloy Regero Portfolio</p>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scroll for navbar links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
